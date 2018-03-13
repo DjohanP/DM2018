@@ -1,6 +1,13 @@
 import knn_impute as ki
 import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
 
+# imputer
 df = pd.read_csv('First/first.csv')
 new_data = ki.knn_impute(target=df['trestbps'], attributes=df.drop(['trestbps', 'binaryClass'], 1),
                                     aggregation_method="mean", k_neighbors=2, numeric_distance='euclidean',
@@ -40,3 +47,34 @@ new_data = ki.knn_impute(target=df['thal'], attributes=df.drop(['age', 'binaryCl
 df = df.assign(thal = new_data)
 # print(df)
 df.to_csv(path_or_buf='hasil_first.csv')
+
+# noise reduction
+# dataset = df.values
+#
+# plt.scatter(dataset[:, 0], dataset[:, 1], marker='o')
+# plt.show()
+
+nclust = 10
+
+#Proses K-Means
+dataset = df.values
+kmeans = KMeans(n_clusters=nclust).fit(dataset)
+labels = kmeans.labels_
+
+#plt.scatter(dataset[:, 0], dataset[:, 1], marker='o', c=labels)
+#plt.show()
+
+#datasetBaru = dataset
+# Proses Penghapusan data
+for i in range(0, nclust):
+    count = np.count_nonzero(labels == i)
+    if count <= 3:
+        indexDelete = np.where(labels == i)
+        dataset = np.delete(dataset, indexDelete, axis=0)
+        labels = np.delete(labels, indexDelete, axis=0)
+
+kmeans_after = KMeans(n_clusters=3).fit(dataset)
+labels_after = kmeans_after.labels_
+        
+plt.scatter(dataset[:, 0], dataset[:, 1], marker='o', c=labels_after)
+plt.show()
