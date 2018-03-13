@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="https://www.openml.org/vocabulary#">
+  <j.0:Dataset rdf:about="https://www.openml.org/d/963">
+    <j.0:version rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</j.0:version>
+    <j.0:data_id rdf:resource="https://www.openml.org/d/963"/>
+    <j.0:uploader_id rdf:resource="https://www.openml.org/u/2"/>
+    <j.0:runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >660</j.0:runs>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_41"/>
+    </j.0:tags>
+    <j.0:default_target_attribute>binaryClass</j.0:default_target_attribute>
+    <j.0:licence>Public</j.0:licence>
+    <j.0:last_update rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2014-01-04T21:43:35Z</j.0:last_update>
+    <j.0:description>**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.</j.0:description>
+    <j.0:status>active</j.0:status>
+    <j.0:exact_name>heart-h</j.0:exact_name>
+    <j.0:nr_of_downloads rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >4</j.0:nr_of_downloads>
+    <j.0:visibility>public</j.0:visibility>
+    <j.0:format>ARFF</j.0:format>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_1"/>
+    </j.0:tags>
+    <j.0:name>heart-h</j.0:name>
+    <j.0:nr_of_likes rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >0</j.0:nr_of_likes>
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2014-01-04T21:43:35Z</j.0:date>
+    <j.0:url>https://www.openml.org/data/download/53497/heart-h.arff</j.0:url>
+  </j.0:Dataset>
+</rdf:RDF>
