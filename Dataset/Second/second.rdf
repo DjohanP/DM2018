@@ -1,0 +1,117 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="https://www.openml.org/vocabulary#">
+  <j.0:Dataset rdf:about="https://www.openml.org/d/6332">
+    <j.0:version rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</j.0:version>
+    <j.0:exact_name>cylinder-bands</j.0:exact_name>
+    <j.0:version_label rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</j.0:version_label>
+    <j.0:data_id rdf:resource="https://www.openml.org/d/6332"/>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/OpenML-CC18"/>
+    </j.0:tags>
+    <j.0:licence>Public</j.0:licence>
+    <j.0:status>active</j.0:status>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/OpenML100"/>
+    </j.0:tags>
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2016-01-30T21:09:17Z</j.0:date>
+    <j.0:url>https://www.openml.org/data/download/1854224/phpAz9Len</j.0:url>
+    <j.0:visibility>public</j.0:visibility>
+    <j.0:uploader_id rdf:resource="https://www.openml.org/u/2"/>
+    <j.0:format>ARFF</j.0:format>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_98"/>
+    </j.0:tags>
+    <j.0:runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >7571</j.0:runs>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_52"/>
+    </j.0:tags>
+    <j.0:nr_of_downloads rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >7</j.0:nr_of_downloads>
+    <j.0:nr_of_likes rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >0</j.0:nr_of_likes>
+    <j.0:name>cylinder-bands</j.0:name>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_34"/>
+    </j.0:tags>
+    <j.0:default_target_attribute>band_type</j.0:default_target_attribute>
+    <j.0:last_update rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2016-01-30T21:09:17Z</j.0:last_update>
+    <j.0:description>**Author**: Bob Evans, RR Donnelley &amp; Sons Co.  &#xD;
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Cylinder+Bands) - August, 1995  &#xD;
+**Please cite**:  [UCI citation policy](https://archive.ics.uci.edu/ml/citation_policy.html)&#xD;
+&#xD;
+### Description&#xD;
+&#xD;
+Cylinder bands UCI dataset - Process delays known as cylinder banding in rotogravure printing were substantially mitigated using control rules discovered by decision tree induction.&#xD;
+ &#xD;
+### Attribute Information&#xD;
+&#xD;
+There are 40 attributes for 540 observations, including the class: 20 are numeric and 20 are nominal.  &#xD;
+There are missing values in 302 of the instances.&#xD;
+&#xD;
+```&#xD;
+   1. timestamp: numeric;19500101 - 21001231  &#xD;
+   2. cylinder number: nominal  &#xD;
+   3. customer: nominal;  &#xD;
+   4. job number: nominal;   &#xD;
+   5. grain screened: nominal; yes, no  &#xD;
+   6. ink color: nominal;  key, type  &#xD;
+   7. proof on ctd ink:  nominal;  yes, no   &#xD;
+   8. blade mfg: nominal;  benton, daetwyler, uddeholm  &#xD;
+   9. cylinder division: nominal;  gallatin, warsaw, mattoon  &#xD;
+  10. paper type: nominal;  uncoated, coated, super  &#xD;
+  11. ink type: nominal;  uncoated, coated, cover  &#xD;
+  12. direct steam: nominal; use; yes, no *  &#xD;
+  13. solvent type: nominal;  xylol, lactol, naptha, line, other  &#xD;
+  14. type on cylinder:  nominal;  yes, no   &#xD;
+  15. press type: nominal; use; 70 wood hoe, 70 motter, 70 albert, 94 motter  &#xD;
+  16. press: nominal;  821, 802, 813, 824, 815, 816, 827, 828  &#xD;
+  17. unit number: nominal;  1, 2, 3, 4, 5, 6, 7, 8, 9, 10  &#xD;
+  18. cylinder size: nominal;  catalog, spiegel, tabloid  &#xD;
+  19. paper mill location: nominal; north us, south us, canadian, &#xD;
+      scandanavian, mid european  &#xD;
+  20. plating tank: nominal; 1910, 1911, other  &#xD;
+  21. proof cut: numeric;  0-100  &#xD;
+  22. viscosity: numeric;  0-100  &#xD;
+  23. caliper: numeric;  0-1.0  &#xD;
+  24. ink temperature: numeric;  5-30  &#xD;
+  25. humifity: numeric;  5-120  &#xD;
+  26. roughness: numeric;  0-2  &#xD;
+  27. blade pressure: numeric;  10-75  &#xD;
+  28. varnish pct: numeric;  0-100  &#xD;
+  29. press speed: numeric;  0-4000  &#xD;
+  30. ink pct: numeric;  0-100  &#xD;
+  31. solvent pct: numeric;  0-100  &#xD;
+  32. ESA Voltage: numeric;  0-16  &#xD;
+  33. ESA Amperage: numeric;  0-10  &#xD;
+  34. wax: numeric ;  0-4.0  &#xD;
+  35. hardener:  numeric; 0-3.0  &#xD;
+  36. roller durometer:  numeric;  15-120  &#xD;
+  37. current density:  numeric;  20-50  &#xD;
+  38. anode space ratio:  numeric;  70-130  &#xD;
+  39. chrome content: numeric; 80-120  &#xD;
+  40. band type: nominal; class; band, no band  &#xD;
+```&#xD;
+&#xD;
+**Notes**:  &#xD;
+* cylinder number is an identifier and should be ignored when modeling the data&#xD;
+* data set consists of 540 observations. UCI explanation states 541, which is wrong. &#xD;
+&#xD;
+### Relevant Papers&#xD;
+&#xD;
+Evans, B., and Fisher, D. (1994). Overcoming process delays with decision tree induction. IEEE Expert, Vol. 9, No. 1, 60--66.&#xD;
+</j.0:description>
+    <j.0:ignore_attribute>"timestamp","cylinder_number"</j.0:ignore_attribute>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_99"/>
+    </j.0:tags>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_14"/>
+    </j.0:tags>
+  </j.0:Dataset>
+</rdf:RDF>

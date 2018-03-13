@@ -1,0 +1,440 @@
+      {
+    "data_id": "963",
+    "name": "heart-h",
+    "exact_name": "heart-h",
+    "version": "2",
+    "version_label": null,
+    "description": "**Author**:   \n**Source**: Unknown - Date unknown  \n**Please cite**:   \n\nBinarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.",
+    "format": "ARFF",
+    "uploader": "Joaquin Vanschoren",
+    "uploader_id": 2,
+    "visibility": "public",
+    "creator": null,
+    "contributor": null,
+    "date": "2014-10-04 22:43:35",
+    "update_comment": null,
+    "last_update": "2014-10-04 22:43:35",
+    "licence": "Public",
+    "status": "active",
+    "error_message": null,
+    "url": "https:\/\/www.openml.org\/data\/download\/53497\/heart-h.arff",
+    "default_target_attribute": "binaryClass",
+    "row_id_attribute": null,
+    "ignore_attribute": null,
+    "runs": 660,
+    "suggest": {
+        "input": [
+            "heart-h",
+            "Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun. "
+        ],
+        "weight": 5
+    },
+    "qualities": {
+        "NumberOfInstances": 294,
+        "NumberOfFeatures": 14,
+        "NumberOfClasses": 2,
+        "NumberOfMissingValues": 782,
+        "NumberOfInstancesWithMissingValues": 293,
+        "NumberOfNumericFeatures": 6,
+        "NumberOfSymbolicFeatures": 8,
+        "MinAttributeEntropy": 0.39131186072008,
+        "Quartile2KurtosisOfNumericAtts": -1.1185754019045,
+        "REPTreeDepth2Kappa": 0.49432664167993,
+        "DecisionStumpAUC": 0.78881473303894,
+        "kNN1NKappa": 0.54372567374489,
+        "MajorityClassSize": 188,
+        "MinKurtosisOfNumericAtts": -2.0043859649123,
+        "Quartile2MeansOfNumericAtts": 1.5999999989302e-8,
+        "REPTreeDepth3AUC": 0.79062123645122,
+        "DecisionStumpErrRate": 0.18027210884354,
+        "MaxAttributeEntropy": 1.6829834834001,
+        "MinMeansOfNumericAtts": -91638847.147731,
+        "Quartile2MutualInformation": 0.05912517400928,
+        "REPTreeDepth3ErrRate": 0.22789115646259,
+        "DecisionStumpKappa": 0.59659296846684,
+        "MaxKurtosisOfNumericAtts": 11281.768224697,
+        "MinMutualInformation": 0.00044852774511,
+        "Quartile2SkewnessOfNumericAtts": 0.035388533890191,
+        "REPTreeDepth3Kappa": 0.49432664167993,
+        "DefaultAccuracy": 0.63945578231293,
+        "MaxMeansOfNumericAtts": 26074559.210526,
+        "MaxMutualInformation": 0.27536597179476,
+        "MinNominalAttDistinctValues": 2,
+        "PercentageOfBinaryFeatures": 28.571428571429,
+        "Quartile2StdDevOfNumericAtts": 1.0000000302108,
+        "RandomTreeDepth1AUC": 0.76111962247765,
+        "Dimensionality": 0.047619047619048,
+        "MaxNominalAttDistinctValues": 4,
+        "MinSkewnessOfNumericAtts": -75.962777538829,
+        "PercentageOfInstancesWithMissingValues": 99.659863945578,
+        "Quartile3AttributeEntropy": 1.116278574695,
+        "AutoCorrelation": 0.99658703071672,
+        "RandomTreeDepth1ErrRate": 0.2312925170068,
+        "EquivalentNumberOfAtts": 7.5744479656926,
+        "MaxSkewnessOfNumericAtts": 103.69437532885,
+        "MinStdDevOfNumericAtts": 0,
+        "PercentageOfMissingValues": 18.999028182702,
+        "Quartile3KurtosisOfNumericAtts": 0.61346513059919,
+        "CfsSubsetEval_DecisionStumpAUC": 0.78881473303894,
+        "RandomTreeDepth1Kappa": 0.50248855265777,
+        "J48.00001.AUC": 0.74588518667202,
+        "MaxStdDevOfNumericAtts": 21111483.86778,
+        "MinorityClassPercentage": 0.36054421768707,
+        "PercentageOfNumericFeatures": 42.857142857143,
+        "Quartile3MeansOfNumericAtts": 2.8260277708333,
+        "CfsSubsetEval_DecisionStumpErrRate": 0.18027210884354,
+        "RandomTreeDepth2AUC": 0.76111962247765,
+        "J48.00001.ErrRate": 0.20748299319728,
+        "MeanAttributeEntropy": 0.8866967039171,
+        "MinorityClassSize": 106,
+        "PercentageOfSymbolicFeatures": 57.142857142857,
+        "Quartile3MutualInformation": 0.2539335029004,
+        "CfsSubsetEval_DecisionStumpKappa": 0.59659296846684,
+        "RandomTreeDepth2ErrRate": 0.2312925170068,
+        "J48.00001.Kappa": 0.54910242872228,
+        "MeanKurtosisOfNumericAtts": 30.449272500643,
+        "NaiveBayesAUC": 0.89356684062625,
+        "Quartile1AttributeEntropy": 0.45371633918694,
+        "Quartile3SkewnessOfNumericAtts": 0.69264371329301,
+        "CfsSubsetEval_NaiveBayesAUC": 0.89365781439031,
+        "RandomTreeDepth2Kappa": 0.50248855265777,
+        "J48.0001.AUC": 0.74588518667202,
+        "MeanMeansOfNumericAtts": -14711.503834582,
+        "NaiveBayesErrRate": 0.17006802721088,
+        "Quartile1KurtosisOfNumericAtts": -1.2089977885594,
+        "Quartile3StdDevOfNumericAtts": 1.0000000840337,
+        "CfsSubsetEval_NaiveBayesErrRate": 0.15986394557823,
+        "RandomTreeDepth3AUC": 0.76111962247765,
+        "J48.0001.ErrRate": 0.20748299319728,
+        "MeanMutualInformation": 0.12451521324785,
+        "NaiveBayesKappa": 0.63117221999197,
+        "Quartile1MeansOfNumericAtts": -4.0000000066653e-9,
+        "REPTreeDepth1AUC": 0.79062123645122,
+        "CfsSubsetEval_NaiveBayesKappa": 0.64823583320605,
+        "RandomTreeDepth3ErrRate": 0.2312925170068,
+        "J48.0001.Kappa": 0.54910242872228,
+        "MeanNoiseToSignalRatio": 6.1211917065274,
+        "NumberOfBinaryFeatures": 4,
+        "Quartile1MutualInformation": 0.0096961344237,
+        "REPTreeDepth1ErrRate": 0.22789115646259,
+        "CfsSubsetEval_kNN1NAUC": 0.776470293055,
+        "RandomTreeDepth3Kappa": 0.50248855265777,
+        "J48.001.AUC": 0.74588518667202,
+        "MeanNominalAttDistinctValues": 2.7142857142857,
+        "Quartile1SkewnessOfNumericAtts": -0.036319030136647,
+        "REPTreeDepth1Kappa": 0.49432664167993,
+        "CfsSubsetEval_kNN1NErrRate": 0.20408163265306,
+        "StdvNominalAttDistinctValues": 0.75592894601845,
+        "J48.001.ErrRate": 0.20748299319728,
+        "MeanSkewnessOfNumericAtts": 0.91631633902948,
+        "Quartile1StdDevOfNumericAtts": 1.0000000060212,
+        "REPTreeDepth2AUC": 0.79062123645122,
+        "CfsSubsetEval_kNN1NKappa": 0.54620292241202,
+        "kNN1NAUC": 0.7768968285829,
+        "J48.001.Kappa": 0.54910242872228,
+        "MeanStdDevOfNumericAtts": 9871.8133920776,
+        "Quartile2AttributeEntropy": 0.84926078244943,
+        "REPTreeDepth2ErrRate": 0.22789115646259,
+        "ClassEntropy": 0.94313400368298,
+        "kNN1NErrRate": 0.21428571428571,
+        "MajorityClassPercentage": 63.945578231293
+    },
+    "tags": [
+        {
+            "tag": "study_1",
+            "uploader": "2"
+        },
+        {
+            "tag": "study_41",
+            "uploader": "1"
+        }
+    ],
+    "features": [
+        {
+            "name": "binaryClass",
+            "index": "13",
+            "type": "nominal",
+            "distinct": "2",
+            "missing": "0",
+            "target": "1",
+            "distr": [
+                [
+                    "P",
+                    "N"
+                ],
+                [
+                    [
+                        "188",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "106"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "age",
+            "index": "0",
+            "type": "numeric",
+            "distinct": "38",
+            "missing": "0",
+            "min": "28",
+            "max": "66",
+            "mean": "48",
+            "stdev": "8"
+        },
+        {
+            "name": "sex",
+            "index": "1",
+            "type": "nominal",
+            "distinct": "2",
+            "missing": "0",
+            "distr": [
+                [
+                    "female",
+                    "male"
+                ],
+                [
+                    [
+                        "69",
+                        "12"
+                    ],
+                    [
+                        "119",
+                        "94"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "chest_pain",
+            "index": "2",
+            "type": "nominal",
+            "distinct": "4",
+            "missing": "0",
+            "distr": [
+                [
+                    "typ_angina",
+                    "asympt",
+                    "non_anginal",
+                    "atyp_angina"
+                ],
+                [
+                    [
+                        "7",
+                        "4"
+                    ],
+                    [
+                        "40",
+                        "83"
+                    ],
+                    [
+                        "43",
+                        "11"
+                    ],
+                    [
+                        "98",
+                        "8"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "trestbps",
+            "index": "3",
+            "type": "numeric",
+            "distinct": "31",
+            "missing": "1",
+            "min": "92",
+            "max": "200",
+            "mean": "133",
+            "stdev": "18"
+        },
+        {
+            "name": "chol",
+            "index": "4",
+            "type": "numeric",
+            "distinct": "153",
+            "missing": "23",
+            "min": "85",
+            "max": "603",
+            "mean": "251",
+            "stdev": "68"
+        },
+        {
+            "name": "fbs",
+            "index": "5",
+            "type": "nominal",
+            "distinct": "2",
+            "missing": "8",
+            "distr": [
+                [
+                    "t",
+                    "f"
+                ],
+                [
+                    [
+                        "7",
+                        "13"
+                    ],
+                    [
+                        "175",
+                        "91"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "restecg",
+            "index": "6",
+            "type": "nominal",
+            "distinct": "3",
+            "missing": "1",
+            "distr": [
+                [
+                    "left_vent_hyper",
+                    "normal",
+                    "st_t_wave_abnormality"
+                ],
+                [
+                    [
+                        "5",
+                        "1"
+                    ],
+                    [
+                        "150",
+                        "85"
+                    ],
+                    [
+                        "33",
+                        "19"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "thalach",
+            "index": "7",
+            "type": "numeric",
+            "distinct": "71",
+            "missing": "1",
+            "min": "82",
+            "max": "190",
+            "mean": "139",
+            "stdev": "24"
+        },
+        {
+            "name": "exang",
+            "index": "8",
+            "type": "nominal",
+            "distinct": "2",
+            "missing": "1",
+            "distr": [
+                [
+                    "no",
+                    "yes"
+                ],
+                [
+                    [
+                        "168",
+                        "36"
+                    ],
+                    [
+                        "19",
+                        "70"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "oldpeak",
+            "index": "9",
+            "type": "numeric",
+            "distinct": "10",
+            "missing": "0",
+            "min": "0",
+            "max": "5",
+            "mean": "1",
+            "stdev": "1"
+        },
+        {
+            "name": "slope",
+            "index": "10",
+            "type": "nominal",
+            "distinct": "3",
+            "missing": "190",
+            "distr": [
+                [
+                    "down",
+                    "flat",
+                    "up"
+                ],
+                [
+                    [
+                        "0",
+                        "1"
+                    ],
+                    [
+                        "19",
+                        "72"
+                    ],
+                    [
+                        "12",
+                        "0"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "ca",
+            "index": "11",
+            "type": "numeric",
+            "distinct": "1",
+            "missing": "291",
+            "min": "0",
+            "max": "0",
+            "mean": "0",
+            "stdev": "0"
+        },
+        {
+            "name": "thal",
+            "index": "12",
+            "type": "nominal",
+            "distinct": "3",
+            "missing": "266",
+            "distr": [
+                [
+                    "fixed_defect",
+                    "normal",
+                    "reversable_defect"
+                ],
+                [
+                    [
+                        "4",
+                        "6"
+                    ],
+                    [
+                        "7",
+                        "0"
+                    ],
+                    [
+                        "4",
+                        "7"
+                    ]
+                ]
+            ]
+        }
+    ],
+    "nr_of_issues": 0,
+    "nr_of_downvotes": 0,
+    "nr_of_likes": 0,
+    "nr_of_downloads": 4,
+    "total_downloads": 5,
+    "reach": 4,
+    "reuse": 5,
+    "impact_of_reuse": 0,
+    "reach_of_reuse": 0,
+    "impact": 5
+}

@@ -1,0 +1,112 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="https://www.openml.org/vocabulary#">
+  <j.0:Dataset rdf:about="https://www.openml.org/d/188">
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_99"/>
+    </j.0:tags>
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2014-01-23T12:15:28Z</j.0:date>
+    <j.0:format>ARFF</j.0:format>
+    <j.0:nr_of_downloads rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >9</j.0:nr_of_downloads>
+    <j.0:last_update rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2014-01-23T12:15:28Z</j.0:last_update>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_1"/>
+    </j.0:tags>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/OpenML100"/>
+    </j.0:tags>
+    <j.0:nr_of_likes rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >0</j.0:nr_of_likes>
+    <j.0:description>**Author**: Bruce Bulloch    &#xD;
+**Source**: [WEKA Dataset Collection](http://www.cs.waikato.ac.nz/ml/weka/datasets.html) - part of the agridatasets archive. [This is the true source](http://tunedit.org/repo/Data/Agricultural/eucalyptus.arff)  &#xD;
+**Please cite**: None  &#xD;
+&#xD;
+**Eucalyptus Soil Conservation**  &#xD;
+The objective was to determine which seedlots in a species are best for soil conservation in seasonally dry hill country. Determination is found by measurement of height, diameter by height, survival, and other contributing factors. &#xD;
+ &#xD;
+It is important to note that eucalypt trial methods changed over time; earlier trials included mostly 15 - 30cm tall seedling grown in peat plots and the later trials have included mostly three replications of eight trees grown. This change may contribute to less significant results.&#xD;
+&#xD;
+Experimental data recording procedures which require noting include:&#xD;
+ - instances with no data recorded due to experimental recording procedures&#xD;
+   require that the absence of a species from one replicate at a site was&#xD;
+   treated as a missing value, but if absent from two or more replicates at a&#xD;
+   site the species was excluded from the site's analyses.&#xD;
+ - missing data for survival, vigour, insect resistance, stem form, crown form&#xD;
+   and utility especially for the data recorded at the Morea Station; this &#xD;
+   could indicate the death of species in these areas or a lack in collection&#xD;
+   of data.  &#xD;
+&#xD;
+### Attribute Information  &#xD;
+ &#xD;
+  1.  Abbrev - site abbreviation - enumerated&#xD;
+  2.  Rep - site rep - integer&#xD;
+  3.  Locality - site locality in the North Island - enumerated&#xD;
+  4.  Map_Ref - map location in the North Island - enumerated&#xD;
+  5.  Latitude - latitude approximation - enumerated&#xD;
+  6.  Altitude - altitude approximation - integer&#xD;
+  7.  Rainfall - rainfall (mm pa) - integer&#xD;
+  8.  Frosts - frosts (deg. c) - integer&#xD;
+  9.  Year - year of planting - integer&#xD;
+  10. Sp - species code - enumerated&#xD;
+  11. PMCno - seedlot number - integer&#xD;
+  12. DBH - best diameter base height (cm) - real&#xD;
+  13. Ht - height (m) - real&#xD;
+  14. Surv - survival - integer&#xD;
+  15. Vig - vigour - real&#xD;
+  16. Ins_res - insect resistance - real&#xD;
+  17. Stem_Fm - stem form - real&#xD;
+  18. Crown_Fm - crown form - real&#xD;
+  19. Brnch_Fm - branch form - real&#xD;
+  Class:&#xD;
+  20. Utility - utility rating - enumerated&#xD;
+&#xD;
+### Relevant papers&#xD;
+&#xD;
+Bulluch B. T., (1992) Eucalyptus Species Selection for Soil Conservation in Seasonally Dry Hill Country - Twelfth Year Assessment  New Zealand Journal of Forestry Science 21(1): 10 - 31 (1991)  &#xD;
+&#xD;
+Kirsten Thomson and Robert J. McQueen (1996) Machine Learning Applied to Fourteen Agricultural Datasets. University of Waikato Research Report  &#xD;
+https://www.cs.waikato.ac.nz/ml/publications/1996/Thomson-McQueen-96.pdf + the original publication: </j.0:description>
+    <j.0:runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >13516</j.0:runs>
+    <j.0:url>https://www.openml.org/data/download/3625/dataset_194_eucalyptus.arff</j.0:url>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_37"/>
+    </j.0:tags>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_70"/>
+    </j.0:tags>
+    <j.0:uploader_id rdf:resource="https://www.openml.org/u/1"/>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_52"/>
+    </j.0:tags>
+    <j.0:visibility>public</j.0:visibility>
+    <j.0:data_id rdf:resource="https://www.openml.org/d/188"/>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_41"/>
+    </j.0:tags>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/OpenML-CC18"/>
+    </j.0:tags>
+    <j.0:exact_name>eucalyptus</j.0:exact_name>
+    <j.0:version rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1</j.0:version>
+    <j.0:default_target_attribute>Utility</j.0:default_target_attribute>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_34"/>
+    </j.0:tags>
+    <j.0:licence>Public</j.0:licence>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_14"/>
+    </j.0:tags>
+    <j.0:tags>
+      <j.0:Tag rdf:about="https://www.openml.org/tag/study_98"/>
+    </j.0:tags>
+    <j.0:status>active</j.0:status>
+    <j.0:version_label rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1</j.0:version_label>
+    <j.0:name>eucalyptus</j.0:name>
+  </j.0:Dataset>
+</rdf:RDF>

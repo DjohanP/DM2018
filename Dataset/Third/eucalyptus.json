@@ -1,0 +1,1100 @@
+      {
+    "data_id": "188",
+    "name": "eucalyptus",
+    "exact_name": "eucalyptus",
+    "version": "1",
+    "version_label": "1",
+    "description": "**Author**: Bruce Bulloch    \r\n**Source**: [WEKA Dataset Collection](http:\/\/www.cs.waikato.ac.nz\/ml\/weka\/datasets.html) - part of the agridatasets archive. [This is the true source](http:\/\/tunedit.org\/repo\/Data\/Agricultural\/eucalyptus.arff)  \r\n**Please cite**: None  \r\n\r\n**Eucalyptus Soil Conservation**  \r\nThe objective was to determine which seedlots in a species are best for soil conservation in seasonally dry hill country. Determination is found by measurement of height, diameter by height, survival, and other contributing factors. \r\n \r\nIt is important to note that eucalypt trial methods changed over time; earlier trials included mostly 15 - 30cm tall seedling grown in peat plots and the later trials have included mostly three replications of eight trees grown. This change may contribute to less significant results.\r\n\r\nExperimental data recording procedures which require noting include:\r\n - instances with no data recorded due to experimental recording procedures\r\n   require that the absence of a species from one replicate at a site was\r\n   treated as a missing value, but if absent from two or more replicates at a\r\n   site the species was excluded from the site's analyses.\r\n - missing data for survival, vigour, insect resistance, stem form, crown form\r\n   and utility especially for the data recorded at the Morea Station; this \r\n   could indicate the death of species in these areas or a lack in collection\r\n   of data.  \r\n\r\n### Attribute Information  \r\n \r\n  1.  Abbrev - site abbreviation - enumerated\r\n  2.  Rep - site rep - integer\r\n  3.  Locality - site locality in the North Island - enumerated\r\n  4.  Map_Ref - map location in the North Island - enumerated\r\n  5.  Latitude - latitude approximation - enumerated\r\n  6.  Altitude - altitude approximation - integer\r\n  7.  Rainfall - rainfall (mm pa) - integer\r\n  8.  Frosts - frosts (deg. c) - integer\r\n  9.  Year - year of planting - integer\r\n  10. Sp - species code - enumerated\r\n  11. PMCno - seedlot number - integer\r\n  12. DBH - best diameter base height (cm) - real\r\n  13. Ht - height (m) - real\r\n  14. Surv - survival - integer\r\n  15. Vig - vigour - real\r\n  16. Ins_res - insect resistance - real\r\n  17. Stem_Fm - stem form - real\r\n  18. Crown_Fm - crown form - real\r\n  19. Brnch_Fm - branch form - real\r\n  Class:\r\n  20. Utility - utility rating - enumerated\r\n\r\n### Relevant papers\r\n\r\nBulluch B. T., (1992) Eucalyptus Species Selection for Soil Conservation in Seasonally Dry Hill Country - Twelfth Year Assessment  New Zealand Journal of Forestry Science 21(1): 10 - 31 (1991)  \r\n\r\nKirsten Thomson and Robert J. McQueen (1996) Machine Learning Applied to Fourteen Agricultural Datasets. University of Waikato Research Report  \r\nhttps:\/\/www.cs.waikato.ac.nz\/ml\/publications\/1996\/Thomson-McQueen-96.pdf + the original publication: ",
+    "format": "ARFF",
+    "uploader": "Jan van Rijn",
+    "uploader_id": 1,
+    "visibility": "public",
+    "creator": null,
+    "contributor": null,
+    "date": "2014-04-23 13:15:28",
+    "update_comment": null,
+    "last_update": "2014-04-23 13:15:28",
+    "licence": "Public",
+    "status": "active",
+    "error_message": null,
+    "url": "https:\/\/www.openml.org\/data\/download\/3625\/dataset_194_eucalyptus.arff",
+    "default_target_attribute": "Utility",
+    "row_id_attribute": null,
+    "ignore_attribute": null,
+    "runs": 13516,
+    "suggest": {
+        "input": [
+            "eucalyptus",
+            "The objective was to determine which seedlots in a species are best for soil conservation in seasonally dry hill country. Determination is found by measurement of height, diameter by height, survival, and other contributing factors. It is important to note that eucalypt trial methods changed over time; earlier trials included mostly 15 - 30cm tall seedling grown in peat plots and the later trials have included mostly three replications of eight trees grown. This change may contribute to less sig "
+        ],
+        "weight": 5
+    },
+    "qualities": {
+        "NumberOfInstances": 736,
+        "NumberOfFeatures": 20,
+        "NumberOfClasses": 5,
+        "NumberOfMissingValues": 448,
+        "NumberOfInstancesWithMissingValues": 95,
+        "NumberOfNumericFeatures": 14,
+        "NumberOfSymbolicFeatures": 6,
+        "MeanKurtosisOfNumericAtts": 62.341490388128,
+        "MinorityClassPercentage": 0.14266304347826,
+        "PercentageOfNumericFeatures": 70,
+        "Quartile3MeansOfNumericAtts": 403.0027173913,
+        "CfsSubsetEval_kNN1NErrRate": 0.41847826086957,
+        "RandomTreeDepth2AUC": 0.75940014868776,
+        "J48.001.ErrRate": 0.43478260869565,
+        "MeanMeansOfNumericAtts": 390.08682880727,
+        "MinorityClassSize": 105,
+        "PercentageOfSymbolicFeatures": 30,
+        "Quartile3MutualInformation": 0.42596498377969,
+        "CfsSubsetEval_kNN1NKappa": 0.46373071090787,
+        "RandomTreeDepth2ErrRate": 0.51902173913043,
+        "J48.001.Kappa": 0.4228639201733,
+        "MeanMutualInformation": 0.38124136721445,
+        "NaiveBayesAUC": 0.85207881741187,
+        "Quartile1AttributeEntropy": 2.9088614619743,
+        "Quartile3SkewnessOfNumericAtts": 0.95229997802524,
+        "ClassEntropy": 2.2620836204283,
+        "RandomTreeDepth2Kappa": 0.29459641868786,
+        "MajorityClassPercentage": 29.076086956522,
+        "MeanNoiseToSignalRatio": 8.0825303963019,
+        "NaiveBayesErrRate": 0.45108695652174,
+        "Quartile1KurtosisOfNumericAtts": -0.50504755991599,
+        "Quartile3StdDevOfNumericAtts": 80.61760056258,
+        "DecisionStumpAUC": 0.7519401667351,
+        "RandomTreeDepth3AUC": 0.80039498382489,
+        "MajorityClassSize": 214,
+        "MaxAttributeEntropy": 4.2373637557636,
+        "MeanNominalAttDistinctValues": 15.4,
+        "NaiveBayesKappa": 0.42741183362624,
+        "Quartile1MeansOfNumericAtts": 2.8829085457271,
+        "REPTreeDepth1AUC": 0.69906247090816,
+        "DecisionStumpErrRate": 0.5054347826087,
+        "RandomTreeDepth3ErrRate": 0.4945652173913,
+        "MaxCardinalityOfNominalAttributes": 27,
+        "MeanSkewnessOfNumericAtts": 2.5445684724664,
+        "NumberOfBinaryFeatures": 0,
+        "Quartile1MutualInformation": 0.32331236253056,
+        "AutoCorrelation": 0.39319727891156,
+        "REPTreeDepth1ErrRate": 0.59510869565217,
+        "DecisionStumpKappa": 0.30247986100142,
+        "RandomTreeDepth3Kappa": 0.36033312799354,
+        "MaxCardinalityOfNumericAttributes": 603,
+        "MeanStdDevOfNumericAtts": 172.61081562462,
+        "Quartile1SkewnessOfNumericAtts": -0.3948923702783,
+        "CardinalityAtFour": 1279171035,
+        "REPTreeDepth1Kappa": 0.21342963107554,
+        "DefaultAccuracy": 0.29076086956522,
+        "StdevCardinalityOfNominalAttributes": 7.6594168620507,
+        "MaxKurtosisOfNumericAtts": 728.94617807902,
+        "MinAttributeEntropy": 2.581064173941,
+        "Quartile1StdDevOfNumericAtts": 0.7785027891813,
+        "CardinalityAtThree": 27216405,
+        "REPTreeDepth2AUC": 0.71713706408052,
+        "Dimensionality": 0.027173913043478,
+        "StdevCardinalityOfNumericAttributes": 198.31787116137,
+        "StdvNominalAttDistinctValues": 7.1274118724822,
+        "MaxMeansOfNumericAtts": 2054.7393689986,
+        "MinCardinalityOfNominalAttributes": 5,
+        "Quartile2AttributeEntropy": 3.4759821137656,
+        "CardinalityAtTwo": 320193,
+        "REPTreeDepth2ErrRate": 0.55570652173913,
+        "EquivalentNumberOfAtts": 5.9334684401021,
+        "kNN1NAUC": 0.70181526026952,
+        "MaxMutualInformation": 0.42753276429854,
+        "MinCardinalityOfNumericAttributes": 2,
+        "Quartile2KurtosisOfNumericAtts": 0.41243764592934,
+        "CfsSubsetEval_DecisionStumpAUC": 0.82394939666572,
+        "REPTreeDepth2Kappa": 0.26720173715332,
+        "J48.00001.AUC": 0.82766818722496,
+        "kNN1NErrRate": 0.46603260869565,
+        "MaxNominalAttDistinctValues": 27,
+        "MinKurtosisOfNumericAtts": -1.8846608031484,
+        "Quartile2MeansOfNumericAtts": 6.2496026170588,
+        "CfsSubsetEval_DecisionStumpErrRate": 0.41847826086957,
+        "REPTreeDepth3AUC": 0.71713706408052,
+        "J48.00001.ErrRate": 0.43478260869565,
+        "kNN1NKappa": 0.40228622299671,
+        "MaxSkewnessOfNumericAtts": 27.035504122839,
+        "MinMeansOfNumericAtts": -2.5842391304348,
+        "Quartile2MutualInformation": 0.40765214345173,
+        "CfsSubsetEval_DecisionStumpKappa": 0.46373071090787,
+        "REPTreeDepth3ErrRate": 0.55570652173913,
+        "J48.00001.Kappa": 0.4228639201733,
+        "MaxStdDevOfNumericAtts": 1551.7798185802,
+        "MinMutualInformation": 0.24650313929826,
+        "Quartile2SkewnessOfNumericAtts": 0.1108941970359,
+        "CfsSubsetEval_NaiveBayesAUC": 0.82394939666572,
+        "REPTreeDepth3Kappa": 0.26720173715332,
+        "J48.0001.AUC": 0.82766818722496,
+        "MeanAttributeEntropy": 3.4626363060529,
+        "MinNominalAttDistinctValues": 8,
+        "PercentageOfBinaryFeatures": 0,
+        "Quartile2StdDevOfNumericAtts": 1.3465996573754,
+        "CfsSubsetEval_NaiveBayesErrRate": 0.41847826086957,
+        "RandomTreeDepth1AUC": 0.68991855870859,
+        "J48.0001.ErrRate": 0.43478260869565,
+        "MeanCardinalityOfNominalAttributes": 13.666666666667,
+        "MinSkewnessOfNumericAtts": -0.69500064492313,
+        "PercentageOfInstancesWithMissingValues": 12.907608695652,
+        "Quartile3AttributeEntropy": 4.0097382462752,
+        "CfsSubsetEval_NaiveBayesKappa": 0.46373071090787,
+        "RandomTreeDepth1ErrRate": 0.6195652173913,
+        "J48.0001.Kappa": 0.4228639201733,
+        "MeanCardinalityOfNumericAttributes": 102.85714285714,
+        "MinStdDevOfNumericAtts": 0.49318784476285,
+        "PercentageOfMissingValues": 3.0434782608696,
+        "Quartile3KurtosisOfNumericAtts": 1.3391927424185,
+        "CfsSubsetEval_kNN1NAUC": 0.82394939666572,
+        "RandomTreeDepth1Kappa": 0.13364378865633,
+        "J48.001.AUC": 0.82766818722496
+    },
+    "tags": [
+        {
+            "uploader": "1",
+            "tag": "OpenML-CC18"
+        },
+        {
+            "uploader": "348",
+            "tag": "OpenML100"
+        },
+        {
+            "uploader": "2",
+            "tag": "study_1"
+        },
+        {
+            "uploader": "64",
+            "tag": "study_14"
+        },
+        {
+            "uploader": "1",
+            "tag": "study_34"
+        },
+        {
+            "uploader": "1",
+            "tag": "study_37"
+        },
+        {
+            "uploader": "1",
+            "tag": "study_41"
+        },
+        {
+            "uploader": "64",
+            "tag": "study_52"
+        },
+        {
+            "uploader": "1856",
+            "tag": "study_70"
+        },
+        {
+            "uploader": "1935",
+            "tag": "study_98"
+        },
+        {
+            "uploader": "1",
+            "tag": "study_99"
+        }
+    ],
+    "features": [
+        {
+            "name": "Utility",
+            "index": "19",
+            "type": "nominal",
+            "distinct": "5",
+            "missing": "0",
+            "target": "1",
+            "distr": [
+                [
+                    "none",
+                    "low",
+                    "average",
+                    "good",
+                    "best"
+                ],
+                [
+                    [
+                        "180",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "107",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "130",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "0",
+                        "214",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "105"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Abbrev",
+            "index": "0",
+            "type": "nominal",
+            "distinct": "16",
+            "missing": "0",
+            "distr": [
+                [
+                    "Cra",
+                    "Cly",
+                    "Nga",
+                    "Wai",
+                    "K81",
+                    "Wak",
+                    "K82",
+                    "WSp",
+                    "K83",
+                    "Lon",
+                    "Puk",
+                    "Paw",
+                    "K81a",
+                    "Mor",
+                    "Wen",
+                    "WSh"
+                ],
+                [
+                    [
+                        "0",
+                        "4",
+                        "7",
+                        "13",
+                        "6"
+                    ],
+                    [
+                        "0",
+                        "5",
+                        "1",
+                        "11",
+                        "7"
+                    ],
+                    [
+                        "4",
+                        "1",
+                        "3",
+                        "13",
+                        "1"
+                    ],
+                    [
+                        "14",
+                        "14",
+                        "5",
+                        "14",
+                        "23"
+                    ],
+                    [
+                        "7",
+                        "17",
+                        "9",
+                        "16",
+                        "16"
+                    ],
+                    [
+                        "29",
+                        "12",
+                        "10",
+                        "14",
+                        "8"
+                    ],
+                    [
+                        "10",
+                        "14",
+                        "11",
+                        "4",
+                        "6"
+                    ],
+                    [
+                        "4",
+                        "1",
+                        "17",
+                        "31",
+                        "6"
+                    ],
+                    [
+                        "10",
+                        "12",
+                        "14",
+                        "10",
+                        "3"
+                    ],
+                    [
+                        "4",
+                        "8",
+                        "8",
+                        "30",
+                        "3"
+                    ],
+                    [
+                        "22",
+                        "10",
+                        "24",
+                        "23",
+                        "5"
+                    ],
+                    [
+                        "3",
+                        "4",
+                        "6",
+                        "27",
+                        "15"
+                    ],
+                    [
+                        "4",
+                        "5",
+                        "13",
+                        "5",
+                        "6"
+                    ],
+                    [
+                        "63",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "6",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "2",
+                        "3",
+                        "0"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Rep",
+            "index": "1",
+            "type": "numeric",
+            "distinct": "4",
+            "missing": "0",
+            "min": "1",
+            "max": "22",
+            "mean": "2",
+            "stdev": "1"
+        },
+        {
+            "name": "Locality",
+            "index": "2",
+            "type": "nominal",
+            "distinct": "8",
+            "missing": "0",
+            "distr": [
+                [
+                    "Central_Hawkes_Bay",
+                    "Northern_Hawkes_Bay",
+                    "Southern_Hawkes_Bay",
+                    "Central_Hawkes_Bay_(coastal)",
+                    "Central_Wairarapa",
+                    "South_Wairarapa",
+                    "Southern_Hawkes_Bay_(coastal)",
+                    "Central_Poverty_Bay"
+                ],
+                [
+                    [
+                        "63",
+                        "4",
+                        "7",
+                        "13",
+                        "6"
+                    ],
+                    [
+                        "0",
+                        "5",
+                        "1",
+                        "11",
+                        "7"
+                    ],
+                    [
+                        "8",
+                        "2",
+                        "22",
+                        "47",
+                        "7"
+                    ],
+                    [
+                        "14",
+                        "14",
+                        "5",
+                        "14",
+                        "23"
+                    ],
+                    [
+                        "31",
+                        "48",
+                        "47",
+                        "35",
+                        "31"
+                    ],
+                    [
+                        "55",
+                        "30",
+                        "42",
+                        "67",
+                        "16"
+                    ],
+                    [
+                        "3",
+                        "4",
+                        "6",
+                        "27",
+                        "15"
+                    ],
+                    [
+                        "6",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Map_Ref",
+            "index": "3",
+            "type": "nominal",
+            "distinct": "14",
+            "missing": "0",
+            "distr": [
+                [
+                    "N135_382\/137",
+                    "N116_848\/985",
+                    "N145_874\/586",
+                    "N142_377\/957",
+                    "N158_344\/626",
+                    "N162_081\/300",
+                    "N158_343\/625",
+                    "N151_912\/221",
+                    "N162_097\/424",
+                    "N166_063\/197",
+                    "N146_273\/737",
+                    "N141_295\/063",
+                    "N98_539\/567",
+                    "N151_922\/226"
+                ],
+                [
+                    [
+                        "0",
+                        "4",
+                        "7",
+                        "13",
+                        "6"
+                    ],
+                    [
+                        "0",
+                        "5",
+                        "1",
+                        "11",
+                        "7"
+                    ],
+                    [
+                        "4",
+                        "1",
+                        "3",
+                        "13",
+                        "1"
+                    ],
+                    [
+                        "14",
+                        "14",
+                        "5",
+                        "14",
+                        "23"
+                    ],
+                    [
+                        "21",
+                        "34",
+                        "36",
+                        "31",
+                        "25"
+                    ],
+                    [
+                        "29",
+                        "12",
+                        "10",
+                        "14",
+                        "8"
+                    ],
+                    [
+                        "10",
+                        "14",
+                        "11",
+                        "4",
+                        "6"
+                    ],
+                    [
+                        "4",
+                        "1",
+                        "17",
+                        "31",
+                        "6"
+                    ],
+                    [
+                        "4",
+                        "8",
+                        "8",
+                        "30",
+                        "3"
+                    ],
+                    [
+                        "22",
+                        "10",
+                        "24",
+                        "23",
+                        "5"
+                    ],
+                    [
+                        "3",
+                        "4",
+                        "6",
+                        "27",
+                        "15"
+                    ],
+                    [
+                        "63",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "6",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "2",
+                        "3",
+                        "0"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Latitude",
+            "index": "4",
+            "type": "nominal",
+            "distinct": "12",
+            "missing": "0",
+            "distr": [
+                [
+                    "39__38",
+                    "39__00",
+                    "40__11",
+                    "39__50",
+                    "40__57",
+                    "41__12",
+                    "40__36",
+                    "41__08",
+                    "41__16",
+                    "40__00",
+                    "39__43",
+                    "82__32"
+                ],
+                [
+                    [
+                        "0",
+                        "4",
+                        "7",
+                        "13",
+                        "6"
+                    ],
+                    [
+                        "0",
+                        "5",
+                        "1",
+                        "11",
+                        "7"
+                    ],
+                    [
+                        "4",
+                        "1",
+                        "3",
+                        "13",
+                        "1"
+                    ],
+                    [
+                        "14",
+                        "14",
+                        "5",
+                        "14",
+                        "23"
+                    ],
+                    [
+                        "31",
+                        "48",
+                        "47",
+                        "35",
+                        "31"
+                    ],
+                    [
+                        "29",
+                        "12",
+                        "10",
+                        "14",
+                        "8"
+                    ],
+                    [
+                        "4",
+                        "1",
+                        "19",
+                        "34",
+                        "6"
+                    ],
+                    [
+                        "4",
+                        "8",
+                        "8",
+                        "30",
+                        "3"
+                    ],
+                    [
+                        "22",
+                        "10",
+                        "24",
+                        "23",
+                        "5"
+                    ],
+                    [
+                        "3",
+                        "4",
+                        "6",
+                        "27",
+                        "15"
+                    ],
+                    [
+                        "63",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "6",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Altitude",
+            "index": "5",
+            "type": "numeric",
+            "distinct": "9",
+            "missing": "0",
+            "min": "70",
+            "max": "300",
+            "mean": "172",
+            "stdev": "59"
+        },
+        {
+            "name": "Rainfall",
+            "index": "6",
+            "type": "numeric",
+            "distinct": "10",
+            "missing": "0",
+            "min": "850",
+            "max": "1750",
+            "mean": "1096",
+            "stdev": "145"
+        },
+        {
+            "name": "Frosts",
+            "index": "7",
+            "type": "numeric",
+            "distinct": "2",
+            "missing": "0",
+            "min": "-3",
+            "max": "0",
+            "mean": "-3",
+            "stdev": "0"
+        },
+        {
+            "name": "Year",
+            "index": "8",
+            "type": "numeric",
+            "distinct": "5",
+            "missing": "0",
+            "min": "1980",
+            "max": "1986",
+            "mean": "1982",
+            "stdev": "2"
+        },
+        {
+            "name": "Sp",
+            "index": "9",
+            "type": "nominal",
+            "distinct": "27",
+            "missing": "0",
+            "distr": [
+                [
+                    "co",
+                    "fr",
+                    "ma",
+                    "nd",
+                    "ni",
+                    "ob",
+                    "ov",
+                    "pu",
+                    "rd",
+                    "si",
+                    "mn",
+                    "ag",
+                    "bxs",
+                    "br",
+                    "el",
+                    "fa",
+                    "jo",
+                    "ka",
+                    "re",
+                    "sm",
+                    "ro",
+                    "nc",
+                    "am",
+                    "cr",
+                    "pa",
+                    "ra",
+                    "te"
+                ],
+                [
+                    [
+                        "4",
+                        "4",
+                        "7",
+                        "10",
+                        "2"
+                    ],
+                    [
+                        "5",
+                        "5",
+                        "9",
+                        "24",
+                        "9"
+                    ],
+                    [
+                        "0",
+                        "2",
+                        "1",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "20",
+                        "2",
+                        "14",
+                        "36",
+                        "14"
+                    ],
+                    [
+                        "0",
+                        "3",
+                        "5",
+                        "20",
+                        "3"
+                    ],
+                    [
+                        "6",
+                        "2",
+                        "6",
+                        "19",
+                        "17"
+                    ],
+                    [
+                        "11",
+                        "12",
+                        "16",
+                        "15",
+                        "8"
+                    ],
+                    [
+                        "16",
+                        "0",
+                        "6",
+                        "9",
+                        "8"
+                    ],
+                    [
+                        "15",
+                        "14",
+                        "6",
+                        "2",
+                        "0"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "1",
+                        "5",
+                        "1"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "0",
+                        "1",
+                        "0"
+                    ],
+                    [
+                        "7",
+                        "2",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "3",
+                        "3",
+                        "7",
+                        "4",
+                        "0"
+                    ],
+                    [
+                        "6",
+                        "14",
+                        "5",
+                        "1",
+                        "2"
+                    ],
+                    [
+                        "4",
+                        "5",
+                        "2",
+                        "1",
+                        "0"
+                    ],
+                    [
+                        "6",
+                        "5",
+                        "13",
+                        "20",
+                        "8"
+                    ],
+                    [
+                        "4",
+                        "4",
+                        "1",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "11",
+                        "8",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "7",
+                        "4",
+                        "17",
+                        "29",
+                        "25"
+                    ],
+                    [
+                        "8",
+                        "6",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "2",
+                        "3",
+                        "1",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "19",
+                        "0",
+                        "7",
+                        "16",
+                        "6"
+                    ],
+                    [
+                        "0",
+                        "5",
+                        "5",
+                        "1",
+                        "0"
+                    ],
+                    [
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "2"
+                    ],
+                    [
+                        "7",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "13",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "PMCno",
+            "index": "10",
+            "type": "numeric",
+            "distinct": "85",
+            "missing": "7",
+            "min": "1",
+            "max": "3275",
+            "mean": "2055",
+            "stdev": "618"
+        },
+        {
+            "name": "DBH",
+            "index": "11",
+            "type": "numeric",
+            "distinct": "603",
+            "missing": "1",
+            "min": "1",
+            "max": "42085",
+            "mean": "73",
+            "stdev": "1552"
+        },
+        {
+            "name": "Ht",
+            "index": "12",
+            "type": "numeric",
+            "distinct": "531",
+            "missing": "1",
+            "min": "1",
+            "max": "22",
+            "mean": "9",
+            "stdev": "4"
+        },
+        {
+            "name": "Surv",
+            "index": "13",
+            "type": "numeric",
+            "distinct": "47",
+            "missing": "94",
+            "min": "2",
+            "max": "100",
+            "mean": "60",
+            "stdev": "31"
+        },
+        {
+            "name": "Vig",
+            "index": "14",
+            "type": "numeric",
+            "distinct": "33",
+            "missing": "69",
+            "min": "1",
+            "max": "5",
+            "mean": "3",
+            "stdev": "1"
+        },
+        {
+            "name": "Ins_res",
+            "index": "15",
+            "type": "numeric",
+            "distinct": "28",
+            "missing": "69",
+            "min": "0",
+            "max": "5",
+            "mean": "3",
+            "stdev": "1"
+        },
+        {
+            "name": "Stem_Fm",
+            "index": "16",
+            "type": "numeric",
+            "distinct": "26",
+            "missing": "69",
+            "min": "0",
+            "max": "5",
+            "mean": "3",
+            "stdev": "1"
+        },
+        {
+            "name": "Crown_Fm",
+            "index": "17",
+            "type": "numeric",
+            "distinct": "29",
+            "missing": "69",
+            "min": "0",
+            "max": "5",
+            "mean": "3",
+            "stdev": "1"
+        },
+        {
+            "name": "Brnch_Fm",
+            "index": "18",
+            "type": "numeric",
+            "distinct": "28",
+            "missing": "69",
+            "min": "0",
+            "max": "5",
+            "mean": "3",
+            "stdev": "1"
+        }
+    ],
+    "nr_of_issues": 0,
+    "nr_of_downvotes": 0,
+    "nr_of_likes": 0,
+    "nr_of_downloads": 9,
+    "total_downloads": 11,
+    "reach": 9,
+    "reuse": 7,
+    "impact_of_reuse": 0,
+    "reach_of_reuse": 0,
+    "impact": 7
+}
