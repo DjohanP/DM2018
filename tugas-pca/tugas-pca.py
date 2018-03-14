@@ -41,9 +41,18 @@ new_data = ki.knn_impute(target=df['ca'], attributes=df.drop(['ca', 'binaryClass
                                     aggregation_method="mode", k_neighbors=2, numeric_distance='euclidean',
                                     categorical_distance='hamming', missing_neighbors_threshold=0.0)
 df = df.assign(ca = new_data)
-new_data = ki.knn_impute(target=df['thal'], attributes=df.drop(['age', 'binaryClass'], 1),
+del df['ca']
+new_data = ki.knn_impute(target=df['thal'], attributes=df.drop(['thal', 'binaryClass'], 1),
                                     aggregation_method="mode", k_neighbors=2, numeric_distance='euclidean',
-                                    categorical_distance='jaccard', missing_neighbors_threshold=0.0)
+                                    categorical_distance='hamming', missing_neighbors_threshold=0.8)
+df = df.assign(thal = new_data)
+new_data = ki.knn_impute(target=df['thal'], attributes=df.drop(['thal', 'binaryClass'], 1),
+                                    aggregation_method="mode", k_neighbors=100, numeric_distance='euclidean',
+                                    categorical_distance='hamming', missing_neighbors_threshold=0.8)
+df = df.assign(thal = new_data)
+new_data = ki.knn_impute(target=df['thal'], attributes=df.drop(['thal', 'binaryClass'], 1),
+                                    aggregation_method="mode", k_neighbors=2, numeric_distance='euclidean',
+                                    categorical_distance='hamming', missing_neighbors_threshold=0.8)
 df = df.assign(thal = new_data)
 # print(df)
 df.to_csv(path_or_buf='hasil_first.csv')
@@ -58,7 +67,7 @@ nclust = 10
 
 #Proses K-Means
 dataset = df.values
-kmeans = KMeans(n_clusters=nclust).fit(dataset)
+kmeans = KMeans(n_clusters=nclust,init='k-means++').fit(df)
 labels = kmeans.labels_
 
 #plt.scatter(dataset[:, 0], dataset[:, 1], marker='o', c=labels)
