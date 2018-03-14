@@ -10,6 +10,7 @@ from sklearn import preprocessing
 from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score
 # imputer
 df = pd.read_csv('First/first.csv')
 new_data = ki.knn_impute(target=df['trestbps'], attributes=df.drop(['trestbps', 'binaryClass'], 1),
@@ -104,7 +105,7 @@ del df['chest_pain']
 del df['slope']
 del df['restecg']
 
-pca = PCA(n_components=4)
+pca = PCA(n_components=12)
 pca.fit(df)
 data2=pca.transform(df)
 y=df['binaryClass']
@@ -113,6 +114,12 @@ gnb = GaussianNB()
 y_pred = gnb.fit(X_train, y_train).predict(X_test)
 benar=(y_test == y_pred).sum()
 print benar/59.0*100
+
+from sklearn.svm import SVC
+clf = SVC()
+y_pred = clf.fit(data2, y).predict(data2)
+print "Accuracy C-Support Vector Classification is ", accuracy_score(y,y_pred)*100
+d = np.arange(0.0, a, 1.0)
 
 pca = PCA(n_components=7)
 pca.fit(df)
