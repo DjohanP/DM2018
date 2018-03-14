@@ -6,7 +6,10 @@ import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
-
+from sklearn import preprocessing
+from sklearn.decomposition import PCA
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
 # imputer
 df = pd.read_csv('First/first.csv')
 new_data = ki.knn_impute(target=df['trestbps'], attributes=df.drop(['trestbps', 'binaryClass'], 1),
@@ -56,25 +59,87 @@ new_data = ki.knn_impute(target=df['thal'], attributes=df.drop(['thal', 'binaryC
 df = df.assign(thal = new_data)
 # print(df)
 df.to_csv(path_or_buf='hasil_first.csv')
+df2 = pd.read_csv('hasil_first.csv',index_col=0)
+df=df.replace('male', 1)
+df=df.replace('female',0)
+df=df.replace('f',0)
+df=df.replace('t',1)
+df=df.replace('no',0)
+df=df.replace('yes',1)
+df=df.replace('P',1)
+df=df.replace('N',0)
 
-# noise reduction
-# dataset = df.values
-#
-# plt.scatter(dataset[:, 0], dataset[:, 1], marker='o')
-# plt.show()
+data_thal = list(df['thal'])
+chest_pain = list(df['chest_pain'])
+restecg=list(df['restecg'])
+slope=list(df['slope'])
 
-nclust = 10
+lb = preprocessing.LabelBinarizer()
+lb.fit(data_thal)
+data_thal_binarized = lb.transform(data_thal)
 
-#Proses K-Means
+lb2 = preprocessing.LabelBinarizer()
+lb2.fit(chest_pain)
+data_chest_binarized = lb2.transform(chest_pain)
+
+lb3 = preprocessing.LabelBinarizer()
+lb3.fit(restecg)
+data_restecg_binarized = lb3.transform(restecg)
+
+lb4 = preprocessing.LabelBinarizer()
+lb4.fit(slope)
+data_slope_binarized = lb3.transform(slope)
+
+for i in range(0, 3):
+    df['thal-'+str(i)] = data_thal_binarized[:, i]
+for i in range(0, 4):
+    df['chest-'+str(i)] = data_chest_binarized[:, i]
+for i in range(0, 3):
+    df['restecg-'+str(i)] = data_restecg_binarized[:, i]
+for i in range(0, 3):
+    df['slope-'+str(i)] = data_slope_binarized[:, i]
+
+del df['thal']
+del df['chest_pain']
+del df['slope']
+del df['restecg']
+
+pca = PCA(n_components=4)
+pca.fit(df)
+data2=pca.transform(df)
+y=df['binaryClass']
+X_train, X_test, y_train, y_test = train_test_split(data2, y, test_size = 0.2, random_state = 0)
+gnb = GaussianNB()
+y_pred = gnb.fit(X_train, y_train).predict(X_test)
+benar=(y_test == y_pred).sum()
+print benar/59.0*100
+
+pca = PCA(n_components=7)
+pca.fit(df)
+data2=pca.transform(df)
+y=df['binaryClass']
+X_train, X_test, y_train, y_test = train_test_split(data2, y, test_size = 0.2, random_state = 0)
+gnb = GaussianNB()
+y_pred = gnb.fit(X_train, y_train).predict(X_test)
+benar=(y_test == y_pred).sum()
+print benar/59.0*100
+
+pca = PCA(n_components=11)
+pca.fit(df)
+data2=pca.transform(df)
+y=df['binaryClass']
+X_train, X_test, y_train, y_test = train_test_split(data2, y, test_size = 0.2, random_state = 0)
+gnb = GaussianNB()
+y_pred = gnb.fit(X_train, y_train).predict(X_test)
+benar=(y_test == y_pred).sum()
+print benar/59.0*100
+
 dataset = df.values
-kmeans = KMeans(n_clusters=nclust,init='k-means++').fit(df)
+kmeans = KMeans(n_clusters=nclust,init='k-means++').fit(dataset)
 labels = kmeans.labels_
+plt.scatter(dataset[:, 0], dataset[:, 1], marker='o', c=labels)
 
-#plt.scatter(dataset[:, 0], dataset[:, 1], marker='o', c=labels)
-#plt.show()
-
-#datasetBaru = dataset
-# Proses Penghapusan data
+datasetBaru = dataset
 for i in range(0, nclust):
     count = np.count_nonzero(labels == i)
     if count <= 3:
